@@ -1,0 +1,37 @@
+create database redbank;
+
+use redbank;
+
+CREATE TABLE login(username varchar(30),email nvarchar(50),password varchar(25));
+
+CREATE TABLE 
+contactus (fname varchar(30), lname varchar(30), city varchar(25), contact varchar(15), email nvarchar(50), subj varchar(255));
+
+CREATE TABLE
+register (username varchar(30), uaddress varchar(50), useremail varchar(50), contact varchar(15), gender varchar(20), age int, password varchar(30) ) ;
+
+CREATE TABLE
+rdonor (username varchar(30), useremail nvarchar(50), password varchar(25), type varchar(10), age int, gender varchar(20), previous varchar(255));
+
+
+CREATE TABLE
+reqtd (username varchar(30), useremail nvarchar(50), password varchar(25), type varchar(25), location varchar(50), hospital varchar(50), subject varchar(255));
+
+
+INSERT INTO `contactus` (`fname`, `lname`, `city`, `contact`, `email`, `subj`) VALUES ('neha', 'A', 'delhi', '9879484553', 'abc@ij.com', 'hello');
+INSERT INTO `contactus` (`fname`, `lname`, `city`, `contact`, `email`, `subj`) VALUES ('megha', 'v', 'pune', '9833984793', 'me@frt.com', 'thank you');
+
+INSERT INTO `login` VALUES  ('jyoti', 'jo@frt.com', '12345');
+INSERT INTO `login` (`username`, `email`, `password`) VALUES ('neha', 'abc@ij.com', '12345'), ('megha', 'me@frt.com', '12345');
+
+INSERT INTO `rdonor` (`username`, `useremail`, `password`, `type`, `age`, `gender`, `previous`) VALUES ('neha', 'abc@ij.com', '12345', 'A +', '21', 'female', 'yes'), ('megha', 'me@frt.com', '12345', 'B-', '20', 'female', 'yes');
+
+
+INSERT INTO `register` (`username`, `uaddress`, `useremail`, `contact`, `gender`, `age`, `password`) VALUES ('Jyoti', 'bhopal', 'jo@xyz.com', '8509865456', 'female', NULL, 'password1'), ('Jay', 'mumbai', 'jay@frt.com', '778906980', 'male', '22', '12345');
+
+INSERT INTO `reqtd` (`username`, `useremail`, `password`, `type`, `location`, `hospital`, `subject`) VALUES ('Peter ', 'sp@abc.ac', 'spider_', 'A+', 'concealed', 'mysterious clinic', 'road Accident'), ('Eddie', 'ed@meta.com', '12345', 'O+', 'pune', '50-50', 'accident');
+
+
+
+
+
